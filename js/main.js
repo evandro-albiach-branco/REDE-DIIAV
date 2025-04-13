@@ -1,4 +1,9 @@
-var sigInst, canvas, $GP
+var sigInst, canvas, $GP;
+
+// ADICIONE ESTAS 3 LINHAS (SOLUÇÃO DEFINITIVA)
+document.addEventListener("DOMContentLoaded", function() {
+    document.body.style.backgroundColor = "#ffffff";
+});
 
 //Load configuration file
 var config={};

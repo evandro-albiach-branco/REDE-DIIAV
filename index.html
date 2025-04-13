@@ -123,5 +123,18 @@
     document.getElementById("sigma-canvas").style.backgroundColor = "transparent";
   }, 500);
 </script>
+	<script>
+  setTimeout(function() {
+    const zoomControls = document.getElementById('zoom');
+    if (zoomControls) {
+      zoomControls.style.position = 'absolute';
+      zoomControls.style.top = '120px';
+      zoomControls.style.left = '10px';
+      zoomControls.style.display = 'flex';
+      zoomControls.style.gap = '5px';
+      zoomControls.style.zIndex = '1000';
+    }
+  }, 500);
+</script>
 </body>
 </html>

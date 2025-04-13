@@ -10,26 +10,49 @@
   }
 </style>
 
-	<style>
-  /* NOVO POSICIONAMENTO DOS CONTROLES DE ZOOM */
-  #zoom {
+<style>
+  /* CONTAINER PRINCIPAL DOS CONTROLES */
+  #zoom-container {
     position: absolute;
-    top: 120px; /* Ajuste esta distância conforme necessário */
-    left: 10px;
-    z-index: 1000;
+    top: 150px; /* Ajuste conforme a altura da sua barra de busca */
+    left: 20px;
+    z-index: 100;
+    background: rgba(255,255,255,0.8);
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
-    gap: 5px;
+    gap: 8px;
   }
-  
-  /* Mantém o gráfico intacto */
-  #sigma-canvas { 
-    position: absolute;
+
+  /* ESTILO DOS BOTÕES */
+  #zoom div.z {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s;
+  }
+
+  #zoom div.z:hover {
+    background: #e0e0e0;
+  }
+
+  /* POSICIONAMENTO DO GRÁFICO */
+  #sigma-canvas {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
   }
 </style>
+
+	<div id="zoom-container">
+  <div id="zoom">
+    <!-- Seus controles de zoom existentes ficarão aqui -->
+  </div>
+</div>
 
 	
 <head>

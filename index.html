@@ -29,6 +29,40 @@
   <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css"/>
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
   <link rel="stylesheet" media="screen and (max-height: 770px)" href="css/tablet.css" />
+
+<style>
+  /* CONTROLES DE ZOOM - AJUSTE PRECISO */
+  #zoom {
+    position: absolute;
+    top: 320px; /* Posição abaixo da caixa de busca (ajuste este valor) */
+    left: 20px; /* Alinhamento com os outros controles */
+    z-index: 100;
+    display: flex;
+    gap: 8px;
+    background: rgba(255,255,255,0.9);
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  #zoom .z {
+    background: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    padding: 6px 14px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  #zoom .z:hover {
+    background: #e9e9e9;
+    transform: translateY(-1px);
+  }
+</style>
+
 </head>
 
 
